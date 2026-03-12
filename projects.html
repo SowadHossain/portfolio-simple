@@ -2,31 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Projects | Sowad Hossain</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header id="top">
-    <h1>Sowad Hossain</h1>
-    <p class="tagline">Full Stack Developer &mdash; SaaS &bull; Dashboards &bull; Automation &bull; Clean UX</p>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="projects.html" class="active">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm mb-4">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Sowad Hossain</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-  <section id="page-banner">
-    <h2>My Projects</h2>
-    <p>Real products. All live. All built by me.</p>
-  </section>
+  <div id="main" class="container mt-4">
+    <div class="mb-5 border-bottom pb-3">
+      <h1 class="display-6 fw-bold">My Projects</h1>
+      <p class="lead text-muted mb-0">Real products. All live. All built by me.</p>
+    </div>
 
-  <div id="main">
-
-    <section class="content-section">
+    <section class="content-section mb-5">
       <h2>Shipped &amp; Live</h2>
       <hr>
       <p style="text-indent: 40px; text-align: justify;">
@@ -48,16 +55,16 @@
     </section>
 
     <!-- PROJECT 1 -->
-    <article class="content-section project-block" id="prime-fitness">
+    <article class="content-section project-block card shadow-sm p-4 mb-5 border-0 rounded" id="prime-fitness">
       <h2>Prime Fitness</h2>
       <hr>
 
-      <figure class="project-fig">
+      <figure class="project-fig mb-4 text-center rounded overflow-hidden shadow-sm">
         <img src="https://placehold.co/820x200/1a3a5c/e89a1a?text=Prime+Fitness+—+Fitness+Tracking+%26+Analytics+Dashboard" alt="Prime Fitness app screenshot" width="820" style="max-width:100%;">
         <figcaption>Prime Fitness &mdash; fitness tracking &amp; management with analytics dashboard</figcaption>
       </figure>
 
-      <table border="1" class="project-meta-table">
+      <table class="table table-bordered table-sm mb-4">
         <tr>
           <th>Type</th>
           <td>Web Application</td>
@@ -84,23 +91,23 @@
       </ul>
 
       <p>
-        <a href="https://prime-fitness.sowadh.me/" target="_blank" class="btn">Open Live Site &rarr;</a>
+        <a href="https://prime-fitness.sowadh.me/" target="_blank" class="btn btn-primary shadow-sm">Open Live Site &rarr;</a>
         &nbsp;&nbsp;
         <a href="#top">&#8593; Back to top</a>
       </p>
     </article>
 
     <!-- PROJECT 2 -->
-    <article class="content-section project-block" id="shobshopping">
+    <article class="content-section project-block card shadow-sm p-4 mb-5 border-0 rounded" id="shobshopping">
       <h2>ShobShopping</h2>
       <hr>
 
-      <figure class="project-fig">
+      <figure class="project-fig mb-4 text-center rounded overflow-hidden shadow-sm">
         <img src="https://placehold.co/820x200/1a3a5c/e89a1a?text=ShobShopping+—+Clean+E-Commerce+Platform" alt="ShobShopping e-commerce platform screenshot" width="820" style="max-width:100%;">
         <figcaption>ShobShopping &mdash; clean e-commerce experience focused on speed and UX</figcaption>
       </figure>
 
-      <table border="1" class="project-meta-table">
+      <table class="table table-bordered table-sm mb-4">
         <tr>
           <th>Type</th>
           <td>E-Commerce Web Application</td>
@@ -128,23 +135,23 @@
       </ul>
 
       <p>
-        <a href="https://shobshopping.com/" target="_blank" class="btn">Open Live Site &rarr;</a>
+        <a href="https://shobshopping.com/" target="_blank" class="btn btn-primary shadow-sm">Open Live Site &rarr;</a>
         &nbsp;&nbsp;
         <a href="#top">&#8593; Back to top</a>
       </p>
     </article>
 
     <!-- PROJECT 3 -->
-    <article class="content-section project-block" id="10x">
+    <article class="content-section project-block card shadow-sm p-4 mb-5 border-0 rounded" id="10x">
       <h2>10x &mdash; SaaS Growth &amp; Automation Platform</h2>
       <hr>
 
-      <figure class="project-fig">
+      <figure class="project-fig mb-4 text-center rounded overflow-hidden shadow-sm">
         <img src="https://placehold.co/820x200/1a3a5c/e89a1a?text=10x+—+Growth+%26+Ops+SaaS+with+Automation+Backbone" alt="10x SaaS platform screenshot" width="820" style="max-width:100%;">
         <figcaption>10x &mdash; growth &amp; ops tooling with automation backbone</figcaption>
       </figure>
 
-      <table border="1" class="project-meta-table">
+      <table class="table table-bordered table-sm mb-4">
         <tr>
           <th>Type</th>
           <td>SaaS Platform</td>
@@ -172,23 +179,23 @@
       </ul>
 
       <p>
-        <a href="https://10x.sowadh.me/" target="_blank" class="btn">Open Live Site &rarr;</a>
+        <a href="https://10x.sowadh.me/" target="_blank" class="btn btn-primary shadow-sm">Open Live Site &rarr;</a>
         &nbsp;&nbsp;
         <a href="#top">&#8593; Back to top</a>
       </p>
     </article>
 
     <!-- PROJECT 4 -->
-    <article class="content-section project-block" id="condogestoin">
+    <article class="content-section project-block card shadow-sm p-4 mb-5 border-0 rounded" id="condogestoin">
       <h2>CondoGestoin &mdash; Property Management Dashboard</h2>
       <hr>
 
-      <figure class="project-fig">
+      <figure class="project-fig mb-4 text-center rounded overflow-hidden shadow-sm">
         <img src="https://placehold.co/820x200/1a3a5c/e89a1a?text=CondoGestoin+—+Property+Management+for+Residents+%26+Admins" alt="CondoGestoin property management dashboard" width="820" style="max-width:100%;">
         <figcaption>CondoGestoin &mdash; property management dashboard for residents &amp; admins</figcaption>
       </figure>
 
-      <table border="1" class="project-meta-table">
+      <table class="table table-bordered table-sm mb-4">
         <tr>
           <th>Type</th>
           <td>Custom Management Software</td>
@@ -216,23 +223,23 @@
       </ul>
 
       <p>
-        <a href="https://condogestoin.sowadh.me/#/login" target="_blank" class="btn">Open Live Site &rarr;</a>
+        <a href="https://condogestoin.sowadh.me/#/login" target="_blank" class="btn btn-primary shadow-sm">Open Live Site &rarr;</a>
         &nbsp;&nbsp;
         <a href="#top">&#8593; Back to top</a>
       </p>
     </article>
 
     <!-- PROJECT 5 -->
-    <article class="content-section project-block" id="fursume">
+    <article class="content-section project-block card shadow-sm p-4 mb-5 border-0 rounded" id="fursume">
       <h2>Fursume &mdash; AI Pet Resume &amp; Travel Pass Builder</h2>
       <hr>
 
-      <figure class="project-fig">
+      <figure class="project-fig mb-4 text-center rounded overflow-hidden shadow-sm">
         <img src="https://placehold.co/820x200/1a3a5c/e89a1a?text=Fursume+—+AI+Pet+Resume+%26+Travel+Pass+Builder" alt="Fursume AI pet resume builder" width="820" style="max-width:100%;">
         <figcaption>Fursume &mdash; AI-powered pet resume and international travel pass builder</figcaption>
       </figure>
 
-      <table border="1" class="project-meta-table">
+      <table class="table table-bordered table-sm mb-4">
         <tr>
           <th>Type</th>
           <td>AI-Powered Web Application</td>
@@ -260,23 +267,23 @@
       </ul>
 
       <p>
-        <a href="https://dev.fursume.com/" target="_blank" class="btn">Open Live Site &rarr;</a>
+        <a href="https://dev.fursume.com/" target="_blank" class="btn btn-primary shadow-sm">Open Live Site &rarr;</a>
         &nbsp;&nbsp;
         <a href="#top">&#8593; Back to top</a>
       </p>
     </article>
 
     <!-- PROJECT 6 -->
-    <article class="content-section project-block" id="wardrobe">
+    <article class="content-section project-block card shadow-sm p-4 mb-5 border-0 rounded" id="wardrobe">
       <h2>Wardrobe &mdash; Inventory &amp; Billing for Clothing Brands</h2>
       <hr>
 
-      <figure class="project-fig">
+      <figure class="project-fig mb-4 text-center rounded overflow-hidden shadow-sm">
         <img src="https://placehold.co/820x200/1a3a5c/e89a1a?text=Wardrobe+—+Mobile-First+Inventory+%26+Billing+for+Clothing+Brands" alt="Wardrobe inventory and billing app" width="820" style="max-width:100%;">
         <figcaption>Wardrobe &mdash; mobile-first inventory management and billing software for clothing brands</figcaption>
       </figure>
 
-      <table border="1" class="project-meta-table">
+      <table class="table table-bordered table-sm mb-4">
         <tr>
           <th>Type</th>
           <td>Custom Management Software (Mobile-First)</td>
@@ -305,14 +312,14 @@
       </ul>
 
       <p>
-        <a href="http://wardrobe.sowadh.me/" target="_blank" class="btn">Open Live Site &rarr;</a>
+        <a href="http://wardrobe.sowadh.me/" target="_blank" class="btn btn-primary shadow-sm">Open Live Site &rarr;</a>
         &nbsp;&nbsp;
         <a href="#top">&#8593; Back to top</a>
       </p>
     </article>
 
     <!-- ALSO BUILDING -->
-    <section class="content-section">
+    <section class="content-section mb-5">
       <h2>Also In Progress</h2>
       <hr>
       <p>Two products currently under active development:</p>
@@ -344,5 +351,6 @@
     <p class="footer-copy">&copy; 2026 Sowad Hossain. All rights reserved.</p>
   </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

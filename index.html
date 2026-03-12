@@ -2,50 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sowad Hossain | Full Stack Developer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header id="top">
-    <h1>Sowad Hossain</h1>
-    <p class="tagline">Full Stack Developer &mdash; SaaS &bull; Dashboards &bull; Automation &bull; Clean UX</p>
-    <nav>
-      <a href="index.html" class="active">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm mb-4">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Sowad Hossain</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
   <!-- HERO -->
-  <section id="hero">
-    <figure class="hero-figure">
-      <img src="https://placehold.co/140x140/152744/ffffff?text=SH" alt="Sowad Hossain - Full Stack Developer" width="140" height="140" class="profile-img">
-    </figure>
-    <h2>Hi, I&rsquo;m Sowad.</h2>
-    <p>
-      I build <strong>SaaS products</strong>, <strong>dashboards</strong>, <strong>e-commerce platforms</strong>,
-      and <strong>custom management software</strong> — with a bias toward clean UX and maintainable code.
-      Based in Dhaka. Working with clients worldwide.
-    </p>
-    <p>
-      <em>&ldquo;If it works, ship it. If it breaks, learn fast and fix faster.&rdquo;</em>
-    </p>
-    <p>
-      <a href="contact.html" class="btn">Hire Me</a>
-      &nbsp;&nbsp;
-      <a href="projects.html" class="btn-outline">See Live Projects</a>
-      &nbsp;&nbsp;
-      <a href="https://sowadh.me/" target="_blank" class="btn-outline">Visit Portfolio &rarr;</a>
-    </p>
+  <section id="hero" class="container mt-5 mb-5">
+    <div class="card shadow border-0">
+      <div class="row g-0">
+        <div class="col-md-4 text-center bg-light p-4 d-flex align-items-center justify-content-center rounded-start">
+          <img src="https://placehold.co/140x140/152744/ffffff?text=SH" alt="Sowad Hossain - Full Stack Developer" width="140" height="140" class="img-fluid rounded-circle shadow-sm">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body p-4">
+            <h2 class="card-title fw-bold">Hi, I&rsquo;m Sowad.</h2>
+            <p class="card-text text-muted mb-4">
+              I build <strong>SaaS products</strong>, <strong>dashboards</strong>, <strong>e-commerce platforms</strong>,
+              and <strong>custom management software</strong>  with a bias toward clean UX and maintainable code.
+              Based in Dhaka. Working with clients worldwide.
+            </p>
+            <p class="card-text fst-italic text-secondary mb-4">
+              &ldquo;If it works, ship it. If it breaks, learn fast and fix faster.&rdquo;
+            </p>
+            <div class="d-flex gap-2">
+              <a href="contact.html" class="btn btn-primary shadow-sm">Hire Me</a>
+              <a href="projects.html" class="btn btn-outline-primary shadow-sm">See Live Projects</a>
+              <a href="https://sowadh.me/" target="_blank" class="btn btn-outline-secondary shadow-sm">Visit Portfolio &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <div id="main">
+  <div id="main" class="container">
 
     <!-- INTRO -->
-    <section class="content-section">
+    <section class="content-section mb-5">
       <h2>What I Do</h2>
       <hr>
       <p style="text-indent: 40px; text-align: justify;">
@@ -60,59 +74,75 @@
         you will be proud to own.
       </p>
       <p style="text-align: center;">
-        <a href="about.html" class="btn">More About Me &rarr;</a>
+        <a href="about.html" class="btn btn-primary">More About Me &rarr;</a>
       </p>
     </section>
 
     <!-- LIVE PROJECTS SNAPSHOT -->
-    <section class="content-section">
+    <section class="content-section mb-5">
       <h2>Selected Live Projects</h2>
       <hr>
-      <table border="1">
-        <caption>Real products — all currently live and accessible</caption>
-        <tr>
-          <th>Project</th>
-          <th>What It Is</th>
-          <th>Live Link</th>
-        </tr>
-        <tr>
-          <td><strong>Prime Fitness</strong></td>
-          <td>Fitness tracking &amp; management with analytics dashboard</td>
-          <td><a href="https://prime-fitness.sowadh.me/" target="_blank">prime-fitness.sowadh.me</a></td>
-        </tr>
-        <tr>
-          <td><strong>ShobShopping</strong></td>
-          <td>Clean e-commerce experience focused on speed and UX</td>
-          <td><a href="https://shobshopping.com/" target="_blank">shobshopping.com</a></td>
-        </tr>
-        <tr>
-          <td><strong>10x</strong></td>
-          <td>Growth &amp; ops tooling with automation backbone (SaaS)</td>
-          <td><a href="https://10x.sowadh.me/" target="_blank">10x.sowadh.me</a></td>
-        </tr>
-        <tr>
-          <td><strong>CondoGestoin</strong></td>
-          <td>Property management dashboard for residents &amp; admins</td>
-          <td><a href="https://condogestoin.sowadh.me/" target="_blank">condogestoin.sowadh.me</a></td>
-        </tr>
-        <tr>
-          <td><strong>Fursume</strong></td>
-          <td>AI pet resume &amp; travel pass builder</td>
-          <td><a href="https://dev.fursume.com/" target="_blank">dev.fursume.com</a></td>
-        </tr>
-        <tr>
-          <td><strong>Wardrobe</strong></td>
-          <td>Mobile-first inventory &amp; billing for clothing brands</td>
-          <td><a href="http://wardrobe.sowadh.me/" target="_blank">wardrobe.sowadh.me</a></td>
-        </tr>
-      </table>
+      
+
+<div id="projectCarousel" class="carousel slide shadow-lg rounded-4 overflow-hidden mb-5 bg-dark text-white" data-bs-ride="carousel" style="min-height: 350px;">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner h-100">
+    <!-- Slide 1 -->
+    <div class="carousel-item active h-100" style="background-color: #212529;">
+      <div class="d-flex flex-column align-items-center justify-content-center h-100 p-5 text-center" style="min-height: 350px;">
+        <h3 class="display-5 fw-bold mb-3">Prime Fitness</h3>
+        <p class="fs-5 mb-4 max-w-75">Fitness tracking & management with analytics dashboard.</p>
+        <a href="https://prime-fitness.sowadh.me/" target="_blank" class="btn btn-outline-light btn-lg rounded-pill px-4">View Live Project</a>
+      </div>
+    </div>
+    <!-- Slide 2 -->
+    <div class="carousel-item h-100" style="background-color: #212529;">
+      <div class="d-flex flex-column align-items-center justify-content-center h-100 p-5 text-center" style="min-height: 350px;">
+        <h3 class="display-5 fw-bold mb-3">ShobShopping</h3>
+        <p class="fs-5 mb-4 max-w-75">Clean e-commerce experience focused on speed and UX.</p>
+        <a href="https://shobshopping.com/" target="_blank" class="btn btn-outline-light btn-lg rounded-pill px-4">View Live Project</a>
+      </div>
+    </div>
+    <!-- Slide 3 -->
+    <div class="carousel-item h-100" style="background-color: #212529;">
+      <div class="d-flex flex-column align-items-center justify-content-center h-100 p-5 text-center" style="min-height: 350px;">
+        <h3 class="display-5 fw-bold mb-3">10x SaaS</h3>
+        <p class="fs-5 mb-4 max-w-75">Growth & ops tooling with automation backbone.</p>
+        <a href="https://10x.sowadh.me/" target="_blank" class="btn btn-outline-light btn-lg rounded-pill px-4">View Live Project</a>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
       <p style="text-align: center;">
-        <a href="projects.html" class="btn">Full Project Details &rarr;</a>
+        <a href="projects.html" class="btn btn-primary">Full Project Details &rarr;</a>
       </p>
     </section>
 
     <!-- WHY HIRE ME -->
-    <section class="content-section">
+    <section class="content-section mb-5">
       <h2>Why Work With Me?</h2>
       <hr>
       <ul>
@@ -126,30 +156,64 @@
     </section>
 
     <!-- CURRENTLY BUILDING -->
-    <section class="content-section">
+    <section class="content-section mb-5">
       <h2>Currently Building</h2>
       <hr>
       <p>Alongside client work, I am actively developing two products of my own:</p>
-      <table border="1">
-        <tr>
-          <th>Product</th>
-          <th>What It Does</th>
-          <th>Status</th>
-          <th>Link</th>
-        </tr>
-        <tr>
-          <td><strong>Bugination</strong></td>
-          <td>Lightweight issue tracking &amp; triage tool for small teams</td>
-          <td><mark>Work in Progress</mark></td>
-          <td><a href="https://bugination.sowadh.me/" target="_blank">bugination.sowadh.me</a></td>
-        </tr>
-        <tr>
-          <td><strong>Wardrobe</strong></td>
-          <td>Mobile-first inventory &amp; billing software for clothing brands</td>
-          <td><mark>Work in Progress</mark></td>
-          <td><a href="http://wardrobe.sowadh.me/" target="_blank">wardrobe.sowadh.me</a></td>
-        </tr>
-      </table>
+      
+
+<div id="projectCarousel" class="carousel slide shadow-lg rounded-4 overflow-hidden mb-5 bg-dark text-white" data-bs-ride="carousel" style="min-height: 350px;">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner h-100">
+    <!-- Slide 1 -->
+    <div class="carousel-item active h-100" style="background-color: #212529;">
+      <div class="d-flex flex-column align-items-center justify-content-center h-100 p-5 text-center" style="min-height: 350px;">
+        <h3 class="display-5 fw-bold mb-3">Prime Fitness</h3>
+        <p class="fs-5 mb-4 max-w-75">Fitness tracking & management with analytics dashboard.</p>
+        <a href="https://prime-fitness.sowadh.me/" target="_blank" class="btn btn-outline-light btn-lg rounded-pill px-4">View Live Project</a>
+      </div>
+    </div>
+    <!-- Slide 2 -->
+    <div class="carousel-item h-100" style="background-color: #212529;">
+      <div class="d-flex flex-column align-items-center justify-content-center h-100 p-5 text-center" style="min-height: 350px;">
+        <h3 class="display-5 fw-bold mb-3">ShobShopping</h3>
+        <p class="fs-5 mb-4 max-w-75">Clean e-commerce experience focused on speed and UX.</p>
+        <a href="https://shobshopping.com/" target="_blank" class="btn btn-outline-light btn-lg rounded-pill px-4">View Live Project</a>
+      </div>
+    </div>
+    <!-- Slide 3 -->
+    <div class="carousel-item h-100" style="background-color: #212529;">
+      <div class="d-flex flex-column align-items-center justify-content-center h-100 p-5 text-center" style="min-height: 350px;">
+        <h3 class="display-5 fw-bold mb-3">10x SaaS</h3>
+        <p class="fs-5 mb-4 max-w-75">Growth & ops tooling with automation backbone.</p>
+        <a href="https://10x.sowadh.me/" target="_blank" class="btn btn-outline-light btn-lg rounded-pill px-4">View Live Project</a>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
     </section>
 
     <!-- QUOTE -->
@@ -162,7 +226,7 @@
       </blockquote>
       <p>Got a project in mind? I am currently open to new freelance work.</p>
       <p style="text-align: center;">
-        <a href="contact.html" class="btn">Start a Conversation &rarr;</a>
+        <a href="contact.html" class="btn btn-primary">Start a Conversation &rarr;</a>
       </p>
     </section>
 
@@ -179,5 +243,6 @@
     <p class="footer-copy">&copy; 2026 Sowad Hossain. All rights reserved.</p>
   </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

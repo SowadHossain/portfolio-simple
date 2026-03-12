@@ -2,29 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About | Sowad Hossain</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header id="top">
-    <h1>Sowad Hossain</h1>
-    <p class="tagline">Full Stack Developer &mdash; SaaS &bull; Dashboards &bull; Automation &bull; Clean UX</p>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html" class="active">About</a>
-      <a href="services.html">Services</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm mb-4">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Sowad Hossain</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-  <section id="page-banner">
-    <h2>About Me</h2>
-    <p>Friendly by default. Creative at heart. Obsessed with smooth UX and tidy code.</p>
-  </section>
-
-  <div id="main">
+  <div id="main" class="container mt-4">
+    <div class="mb-5 border-bottom pb-3">
+      <h1 class="display-6 fw-bold">About Me</h1>
+      <p class="lead text-muted mb-0">Friendly by default. Creative at heart. Obsessed with smooth UX and tidy code.</p>
+    </div>
 
     <!-- BIO -->
     <section class="content-section">
@@ -57,10 +64,10 @@
     <section class="content-section">
       <h2>Find Me Online</h2>
       <hr>
-      <table border="1">
+      <table class="table table-striped table-bordered mt-3">
         <tr>
           <th>Platform</th>
-          <th>Link</th>
+          <th>Link <button type="button" class="btn btn-sm btn-outline-primary ms-3" data-bs-toggle="modal" data-bs-target="#hireMeModal">Hire Me</button></th>
         </tr>
         <tr>
           <td>Email</td>
@@ -80,7 +87,7 @@
         </tr>
         <tr>
           <td>Availability</td>
-          <td><mark>Open to collaborations</mark></td>
+          <td><span class="badge bg-success">Open to collaborations</span></td>
         </tr>
       </table>
     </section>
@@ -89,7 +96,7 @@
     <section class="content-section">
       <h2>Tech Stack</h2>
       <hr>
-      <table border="1">
+      <table class="table table-striped table-bordered mt-3">
         <tr>
           <th>Category</th>
           <th>Technologies</th>
@@ -147,6 +154,28 @@
     </p>
     <p class="footer-copy">&copy; 2026 Sowad Hossain. All rights reserved.</p>
   </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Bootstrap Modal -->
+<div class="modal fade" id="hireMeModal" tabindex="-1" aria-labelledby="hireMeModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title" id="hireMeModalLabel">Let's work together!</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="alert alert-info">I am currently <strong>available</strong> for new projects.</div>
+        <p>Would you like to send me a message regarding a potential project or collaboration?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="contact.html" class="btn btn-primary">Go to Contact Form</a>
+      </div>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>

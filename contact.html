@@ -2,32 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact | Sowad Hossain</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header id="top">
-    <h1>Sowad Hossain</h1>
-    <p class="tagline">Full Stack Developer &mdash; SaaS &bull; Dashboards &bull; Automation &bull; Clean UX</p>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html" class="active">Contact</a>
-    </nav>
-  </header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm mb-4">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Sowad Hossain</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-  <section id="page-banner">
-    <h2>Contact Me</h2>
-    <p>Got a project in mind? Let&rsquo;s talk. I respond within 24 hours.</p>
-  </section>
-
-  <div id="main">
+  <div id="main" class="container mt-4">
+    <div class="mb-5 border-bottom pb-3">
+      <h1 class="display-6 fw-bold">Contact Me</h1>
+      <p class="lead text-muted mb-0">Got a project in mind? Let&rsquo;s talk. I respond within 24 hours.</p>
+    </div>
 
     <!-- INTRO -->
-    <section class="content-section">
+    <section class="content-section mb-5">
       <h2>Let&rsquo;s Build Something Together</h2>
       <hr>
 
@@ -51,10 +58,10 @@
     </section>
 
     <!-- DIRECT CONTACT -->
-    <section class="content-section">
+    <section class="content-section mb-5">
       <h2>Direct Contact</h2>
       <hr>
-      <table border="1">
+      <table class="table table-striped table-bordered table-hover">
         <tr>
           <th>Platform</th>
           <th>Details</th>
@@ -95,84 +102,74 @@
     </section>
 
     <!-- FORM -->
-    <section class="content-section">
+    <section class="content-section mb-5">
       <h2>Send Me a Message</h2>
       <hr>
       <p>Fill in the form below and I will get back to you within 24 hours.</p>
 
-      <form action="#" method="post">
-        <fieldset>
-          <legend>Project Enquiry</legend>
+      <form action="#" method="get" class="card shadow-sm p-4 border-0">
+        <div class="mb-3">
+          <label for="fname" class="form-label">First Name <span class="text-danger">*</span></label>
+          <input type="text" id="fname" name="fname" class="form-control" required placeholder="e.g. John">
+        </div>
 
-          <label for="fname">Full Name: <span class="required">*</span></label><br>
-          <input type="text" id="fname" name="fname" placeholder="Your full name" required><br><br>
+        <div class="mb-3">
+          <label for="lname" class="form-label">Last Name <span class="text-danger">*</span></label>
+          <input type="text" id="lname" name="lname" class="form-control" required placeholder="e.g. Doe">
+        </div>
 
-          <label for="email">Email Address: <span class="required">*</span></label><br>
-          <input type="email" id="email" name="email" placeholder="you@example.com" required><br><br>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email Address <span class="text-danger">*</span></label>
+          <input type="email" id="email" name="email" class="form-control" required placeholder="e.g. john@example.com">
+        </div>
 
-          <label for="company">Company / Organisation (if applicable):</label><br>
-          <input type="text" id="company" name="company" placeholder="Your company name"><br><br>
+        <div class="mb-3">
+          <label class="form-label d-block">Project Type <span class="text-danger">*</span></label>
+          <div class="form-check form-check-inline">
+            <input type="radio" id="proj_website" name="project_type" value="Website" class="form-check-input" required>
+            <label for="proj_website" class="form-check-label">Website</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="radio" id="proj_webapp" name="project_type" value="Web App" class="form-check-input">
+            <label for="proj_webapp" class="form-check-label">Web App</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="radio" id="proj_saas" name="project_type" value="SaaS" class="form-check-input">
+            <label for="proj_saas" class="form-check-label">SaaS Integration</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="radio" id="proj_other" name="project_type" value="Other" class="form-check-input">
+            <label for="proj_other" class="form-check-label">Other</label>
+          </div>
+        </div>
 
-          <label for="service">Service You Need: <span class="required">*</span></label><br>
-          <select id="service" name="service" required>
-            <option value="">-- Please select --</option>
-            <option value="website">Website</option>
-            <option value="webapp">Web Application / SaaS</option>
-            <option value="mobileapp">Mobile App</option>
-            <option value="software">Custom Management Software</option>
-            <option value="automation">Automation / API Integration</option>
-            <option value="maintenance">Maintenance on Existing Project</option>
-            <option value="other">Other / Not Sure Yet</option>
-          </select><br><br>
+        <div class="mb-3">
+          <label for="budget" class="form-label">Estimated Budget (USD)</label>
+          <select id="budget" name="budget" class="form-select">
+            <option value="">-- Select a range --</option>
+            <option value="under500">Under </option>
+            <option value="500-1000"> - ,000</option>
+            <option value="1000-5000">,000 - ,000</option>
+            <option value="5000+">,000+</option>
+          </select>
+        </div>
 
-          <label for="budget">Budget Range: <span class="required">*</span></label><br>
-          <select id="budget" name="budget" required>
-            <option value="">-- Please select --</option>
-            <option value="under150">Under $150</option>
-            <option value="150to500">$150 &ndash; $500</option>
-            <option value="500to1200">$500 &ndash; $1,200</option>
-            <option value="1200to3000">$1,200 &ndash; $3,000</option>
-            <option value="3000plus">$3,000+</option>
-            <option value="discuss">Let&rsquo;s discuss</option>
-          </select><br><br>
+        <div class="mb-3">
+          <label for="message" class="form-label">Project Details <span class="text-danger">*</span></label>
+          <textarea id="message" name="message" rows="5" class="form-control" required placeholder="Tell me about your goals, timeline, and what you need built..."></textarea>
+        </div>
 
-          <label for="timeline">Your Deadline:</label><br>
-          <select id="timeline" name="timeline">
-            <option value="">-- When do you need this? --</option>
-            <option value="asap">As soon as possible</option>
-            <option value="2weeks">Within 2 weeks</option>
-            <option value="1month">Within 1 month</option>
-            <option value="3months">Within 3 months</option>
-            <option value="flexible">Flexible &mdash; quality over speed</option>
-          </select><br><br>
+        <div class="mb-3 form-check">
+          <input type="checkbox" id="newsletter" name="newsletter" value="yes" class="form-check-input">
+          <label for="newsletter" class="form-check-label">Subscribe to my monthly tech & UX newsletter</label>
+        </div>
 
-          <label for="message">Tell Me About Your Project: <span class="required">*</span></label><br>
-          <textarea id="message" name="message" rows="8" cols="60"
-            placeholder="Describe your project, the problem you are trying to solve, any features you need, and any existing systems it needs to connect to. The more detail the better!" required></textarea><br><br>
-
-          <label>
-            <input type="radio" name="pref" value="email" checked>
-            Prefer email response
-          </label><br>
-          <label>
-            <input type="radio" name="pref" value="call">
-            Prefer a 30-minute discovery call (I will send a scheduling link)
-          </label><br><br>
-
-          <label>
-            <input type="checkbox" name="consent" required>
-            I agree to be contacted regarding this enquiry. <span class="required">*</span>
-          </label><br><br>
-
-          <input type="submit" value="Send Enquiry &rarr;">
-          &nbsp;&nbsp;
-          <input type="reset" value="Clear">
-        </fieldset>
+        <button type="submit" class="btn btn-primary btn-lg w-100 shadow-sm mt-3">Send Message</button>
       </form>
     </section>
 
     <!-- FAQ -->
-    <section class="content-section">
+    <section class="content-section mb-5">
       <h2>Common Questions</h2>
       <hr>
       <dl>
@@ -209,5 +206,6 @@
     <p class="footer-copy">&copy; 2026 Sowad Hossain. All rights reserved.</p>
   </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
